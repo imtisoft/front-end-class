@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+    
+    <script>
+
+        const name="John Doe";
+        // name="Jane Smith";
+        const age=25;
+        //window.alert("Hello, Mr. "+name+" Your Age is "+age);
+        document.write("Welcome to JavaScript Basics! "+name);
+
+        let x=10, y=20;
+        let sum=x+y;
+        let sub=x-y;
+        let mul=x*y;
+        let div=x/y;
+        document.write("<br> ARITHMETIC OPERATIONS <br>");
+        document.write("Sum of "+x+" and "+y+" is: "+sum);
+        document.write("<br> Subtraction of "+x+" and "+y+" is: "+sub);
+        document.write("<br> Multiplication of "+x+" and "+y+" is: "+mul);
+        document.write("<br> Division of "+x+" and "+y+" is: "+div);
+
+        document.write("<br> <br> Assignment Operators <br>");
+        let p=5;
+        p+=3;   // p=p+3
+        document.write("Value of p after p+=3 is: "+p);
+        p*=2;
+        document.write("<br> Value of p after p*=2 is: "+p);
+
+        document.write("<br>",16!='16');
+
+
+        if(!(2>5)){
+            document.write("<br> Condition is True");   
+        }
+        else{
+            document.write("<br> Condition is False");
+        }
+
+document.write("<br> <br> String Operations <br>");
+document.write("--------------------------<br>");
+let Fname="Sachin ";
+let Lname="Tendulkar";
+document.write(Fname+Lname);
+
+let msg="Welcome to JavaScript Basics ! ";
+msg+="Its very easy to learn.";
+document.write("<br>"+msg);
+
+document.write("<br> Conditional Statements <br>");
+
+//let myAge=16;
+//let marks=prompt("Enter your Marks: ");
+let marks=56;
+if(marks>=70){
+    document.write("<br> Result is : Distinction");
+}
+else if(marks>=60){
+    document.write("<br> Result is : First Class");
+}
+else if(marks>=50){
+    document.write("<br> Result is : Second Class");
+}
+else if(marks>=35){
+    document.write("<br> Result is : Pass");
+}
+else{
+    document.write("<br> Result is : Fail");
+}
+
+// let letter = prompt("Enter a letter: ");
+// switch(letter){
+//     case 'a': alert("APPLE"); break;
+//     case 'b': alert("BALL"); break;
+//     default: alert("Invalid Letter");
+// }
+
+let num1=prompt("Enter First Number: ");
+let num2=prompt("Enter Second Number: ");
+let op=prompt("Enter Operator: ");
+
+switch(op){
+    case '+': alert("Sum is: "+(parseInt(num1)+parseInt(num2))); break;
+    case '-': alert("Subtraction is: "+(parseInt(num1)-parseInt(num2))); break;
+    case '*': alert("Multiplication is: "+(parseInt(num1)*parseInt(num2))); break;
+    case '/': alert("Division is: "+(parseInt(num1)/parseInt(num2))); break;
+    default: alert("Invalid Operator"); 
+        }
+
+        let i=0;
+        while(i<5){
+            document.write("<br> Value of i is: "+i);
+            i++;
+        }
+
+        function greeting(){
+           console.log(5619);
+        }
+
+        greeting();
+
+
+    </script>
+</body>
+</html>
